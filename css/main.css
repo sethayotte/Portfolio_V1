@@ -1,22 +1,115 @@
-
-
 .navbar-custom {
-    color: black;
-    background-color: #F4F4F4;
-    border-radius: 10px;
-    height: 50px;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 500;
+  height: 50px;
 }
 
-nav li:active {
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 500;
-    color: #2136FF;
+.navbar-custom .navbar-toggler-icon {
+  background-image: "assets/Menu-Toggle.png" !important;
 }
 
-nav li {
-    color: black;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 300;
+.navbar-custom a {
+  color: #313131;
 }
 
+.navbar-custom li:hover {
+  background-color: #E1E1E1;
+  color: #F4F4F4;
+  border-radius: 5px;
+  width: 100%;
+}
 
+.navbar-custom li:active {
+  color: #2136FF;
+}
+
+body h1 {
+  font-size: 3rem;
+  font-family: Heebo, sans-serif;
+  font-weight: 700;
+  color: #313131;
+}
+
+body h2 {
+  font-size: 2rem;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 400;
+}
+
+body h3 {
+  font-size: 1.5rem;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+body p {
+  font-size: 1rem;
+  font-family: Heebo, sans-serif;
+  font-weight: 500;
+  color: #313131;
+}
+
+body {
+  margin: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body .vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body #landing {
+  margin-left: 20%;
+}
+
+#project-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10%;
+}
+
+#project-feature img {
+  height: 550px;
+  margin-left: 15%;
+  margin-right: 100px;
+}
+
+#project-feature p {
+  color: #29BB86;
+}
+/*# sourceMappingURL=main.css.map */
