@@ -1,0 +1,22 @@
+
+
+.navbar-custom {
+    color: black;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    height: 50px;
+}
+
+nav li:active {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    color: #2136FF;
+}
+
+nav li {
+    color: black;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300;
+}
+
+
