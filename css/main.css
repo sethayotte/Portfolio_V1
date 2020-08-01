@@ -1,9 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-custom {
   background-color: #F4F4F4;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   border-radius: 10px;
   font-family: Chakra Petch, sans-serif;
   font-weight: 500;
   height: 50px;
+  opacity: 0.95;
 }
 
 .navbar-custom .navbar-toggler-icon {
@@ -16,12 +23,15 @@
 
 .navbar-custom li:hover {
   background-color: #E1E1E1;
-  color: #F4F4F4;
   border-radius: 5px;
   width: 100%;
 }
 
-.navbar-custom li:active {
+.navbar-custom a:hover {
+  color: black;
+}
+
+.navbar-custom a:focus {
   color: #2136FF;
 }
 
@@ -47,6 +57,13 @@ body h3 {
 
 body h4 {
   font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+}
+
+body h4:hover {
+  text-decoration: none;
+  color: #2136FF;
 }
 
 body p {
@@ -133,5 +150,55 @@ body .fas.fa-arrow-circle-down {
 
 #project-feature p {
   color: #29BB86;
+}
+
+#all-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
+}
+
+#all-projects img {
+  height: 300px;
+  margin-left: 75px;
+}
+
+#all-projects p {
+  color: #1E0A78;
+}
+
+#work-experience h2 {
+  text-align: center;
+}
+
+#work-experience p {
+  color: #FF8500;
+  text-align: center;
+}
+
+#work-experience img {
+  height: 490px;
+}
+
+#work-experience .layer1 {
+  margin-top: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+#work-experience .layer2 {
+  position: absolute;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */

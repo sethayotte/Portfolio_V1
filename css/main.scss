@@ -4,7 +4,9 @@ $colors: (
     nav-bg: #F4F4F4,
     nav-hover: #E1E1E1,
     black: black,
-    sprout: #29BB86
+    sprout: #29BB86,
+    secondarylink: #1E0A78,
+    tertiarylink: #FF8500
 );
 
 @function color($color-name) {
@@ -20,12 +22,19 @@ $fonts: (
     @return map-get($fonts, $font-name)
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar-custom {
     background-color: color(nav-bg);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     font-family: font(chakra);
     font-weight: 500;
     height: 50px;
+    opacity: 0.95;
+    
 
     .navbar-toggler-icon {
         background-image: "assets/Menu-Toggle.png" !important;
@@ -37,12 +46,15 @@ $fonts: (
 
     li:hover {
         background-color: color(nav-hover);
-        color: color(nav-bg);
         border-radius: 5px;
         width: 100%;
     }
 
-    li:active {
+    a:hover {
+        color: color(black);
+    }
+
+    a:focus {
         color: color(accent);
     }
 }
@@ -70,6 +82,13 @@ body {
 
     h4 {
         font-size: 1.25rem;
+        text-decoration: none;
+        color: color(black);
+    }
+
+    h4:hover {
+        text-decoration: none;
+        color: color(accent);
     }
 
     p {
@@ -132,6 +151,49 @@ body {
 
     p{
         color: color(sprout);
+    }
+}
+
+#all-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+
+    img {
+        height: 300px;
+        margin-left: 75px;
+    }
+
+    p {
+        color: color(secondarylink);
+    }
+}
+
+#work-experience {
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        color: color(tertiarylink);
+        text-align: center;
+    }
+
+    img {
+        height: 490px;
+    }
+
+    .layer1 {
+        margin-top: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .layer2 {
+        position: absolute;
+        z-index: 2;
     }
 }
 
