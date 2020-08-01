@@ -33,7 +33,7 @@ html {
     font-family: font(chakra);
     font-weight: 500;
     height: 50px;
-    opacity: 0.95;
+    opacity: 0.75;
     
 
     .navbar-toggler-icon {
@@ -57,6 +57,21 @@ html {
     a:focus {
         color: color(accent);
     }
+}
+
+.navbar-social {
+    background-color: color(nav-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    height: 50px;
+    opacity: 0.85;
+    width: 190px;
+
+    li:hover {
+        background-color: color(nav-hover);
+        border-radius: 5px;
+    }
+
 }
 
 body {
@@ -141,7 +156,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 5%;
 
     img {
         height: 550px;
@@ -152,6 +167,10 @@ body {
     p{
         color: color(sprout);
     }
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 #all-projects {
@@ -159,7 +178,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 5%;
 
     img {
         height: 300px;
@@ -168,6 +186,10 @@ body {
 
     p {
         color: color(secondarylink);
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 }
 
@@ -185,18 +207,68 @@ body {
         height: 490px;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
     .layer1 {
         margin-top: 15px;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
     }
 
     .layer2 {
         position: absolute;
-        z-index: 2;
+        z-index: 1;
     }
 }
 
+#learn-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        margin-left: 100px;
+    }
+
+    img {
+        height: 75px;
+    }
+
+    p{
+        color: color(accent);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    #i1, #i2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+
+    #i1 {
+        padding-bottom: 45px;
+        img {
+            margin-right: 25px;
+        }
+    }
+
+    #i2 {
+        padding-top: 45px;
+        border-top: 3px black solid;
+
+        img {
+            margin-left: 25px;
+        }
+    }
+}
 
 
 

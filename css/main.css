@@ -10,7 +10,7 @@ html {
   font-family: Chakra Petch, sans-serif;
   font-weight: 500;
   height: 50px;
-  opacity: 0.95;
+  opacity: 0.75;
 }
 
 .navbar-custom .navbar-toggler-icon {
@@ -33,6 +33,21 @@ html {
 
 .navbar-custom a:focus {
   color: #2136FF;
+}
+
+.navbar-social {
+  background-color: #F4F4F4;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 10px;
+  height: 50px;
+  opacity: 0.85;
+  width: 190px;
+}
+
+.navbar-social li:hover {
+  background-color: #E1E1E1;
+  border-radius: 5px;
 }
 
 body h1 {
@@ -139,7 +154,7 @@ body .fas.fa-arrow-circle-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 #project-feature img {
@@ -150,6 +165,10 @@ body .fas.fa-arrow-circle-down {
 
 #project-feature p {
   color: #29BB86;
+}
+
+#project-feature a:hover {
+  text-decoration: none;
 }
 
 #all-projects {
@@ -166,7 +185,6 @@ body .fas.fa-arrow-circle-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 5%;
 }
 
 #all-projects img {
@@ -176,6 +194,10 @@ body .fas.fa-arrow-circle-down {
 
 #all-projects p {
   color: #1E0A78;
+}
+
+#all-projects a:hover {
+  text-decoration: none;
 }
 
 #work-experience h2 {
@@ -191,14 +213,84 @@ body .fas.fa-arrow-circle-down {
   height: 490px;
 }
 
+#work-experience a:hover {
+  text-decoration: none;
+}
+
 #work-experience .layer1 {
   margin-top: 15px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 #work-experience .layer2 {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
+}
+
+#learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#learn-more h2 {
+  margin-left: 100px;
+}
+
+#learn-more img {
+  height: 75px;
+}
+
+#learn-more p {
+  color: #2136FF;
+}
+
+#learn-more a:hover {
+  text-decoration: none;
+}
+
+#learn-more #i1, #learn-more #i2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+}
+
+#learn-more #i1 {
+  padding-bottom: 45px;
+}
+
+#learn-more #i1 img {
+  margin-right: 25px;
+}
+
+#learn-more #i2 {
+  padding-top: 45px;
+  border-top: 3px black solid;
+}
+
+#learn-more #i2 img {
+  margin-left: 25px;
 }
 /*# sourceMappingURL=main.css.map */
