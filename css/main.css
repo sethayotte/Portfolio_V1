@@ -11,6 +11,7 @@ html {
   font-weight: 500;
   height: 50px;
   opacity: 0.75;
+  z-index: 100;
 }
 
 .navbar-custom .navbar-toggler-icon {
@@ -33,6 +34,13 @@ html {
 
 .navbar-custom a:focus {
   color: #2136FF;
+}
+
+.navbar-collapse {
+  background-color: #F4F4F4;
+  border-radius: 0px 0px 5px 5px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .navbar-social {
