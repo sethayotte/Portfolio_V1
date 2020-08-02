@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .navbar-custom {
   background-color: #F4F4F4;
   -webkit-backdrop-filter: blur(20px);
@@ -89,6 +101,12 @@ body h4:hover {
   color: #2136FF;
 }
 
+body h5 {
+  font-size: 4rem;
+  font-family: Heebo, sans-serif;
+  font-weight: 700;
+}
+
 body p {
   font-size: 1rem;
   font-family: Heebo, sans-serif;
@@ -96,14 +114,14 @@ body p {
   color: #313131;
 }
 
-body {
+.landing-body {
   margin: 0;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
-body .vertical-center {
+.landing-body .vertical-center {
   min-height: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -122,12 +140,12 @@ body .vertical-center {
   position: relative;
 }
 
-body section {
+.landing-body section {
   height: 100vh;
   scroll-snap-align: start;
 }
 
-body #start {
+.landing-body #start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +161,7 @@ body #start {
   padding-bottom: 25px;
 }
 
-body .fas.fa-arrow-circle-down {
+.landing-body .fas.fa-arrow-circle-down {
   color: #2136FF;
   font-size: larger;
 }
@@ -300,5 +318,76 @@ body .fas.fa-arrow-circle-down {
 
 #learn-more #i2 img {
   margin-left: 25px;
+}
+
+#back-button {
+  width: 230px;
+  height: 40px;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 5% 50%);
+          clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 5% 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 100px 15px 15px 15px;
+}
+
+#back-button p {
+  color: #2136FF;
+  text-align: center;
+  margin: auto;
+  padding-left: 30px;
+}
+
+#back-button:hover {
+  background-color: #E1E1E1;
+}
+
+#back-button:hover a:hover {
+  text-decoration: none;
+}
+
+.project-header {
+  text-align: center;
+  margin-top: 75px;
+}
+
+#sprout {
+  color: #29BB86;
+}
+
+.project-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px;
+  margin-top: 100px;
+}
+
+.project-overview h5 {
+  color: #29BB86;
+}
+
+.project-brief {
+  margin-right: 75px;
+  max-width: 400px;
+}
+
+.project-brief h5 {
+  font-size: 2.5rem;
+}
+
+.project-details h5 {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

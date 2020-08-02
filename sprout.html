@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,300&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
@@ -16,7 +15,7 @@
 
 <header>
     <nav class="navbar navbar-expand-md navbar-custom fixed-top m-3">
-        <a class="navbar-brand pl-3" href="#">
+        <a class="navbar-brand pl-3" href="index.html">
           <img src="assets/SM2021-08.png" height="30" class="d-inline-block align-top" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,7 +43,7 @@
       </nav>
 
 </header>
-<body class="landing-body">
+<body id="main-body">
 
     <nav class="navbar navbar-expand navbar-social fixed-bottom m-3 pl-2" id="navbar-social">
         <ul class="navbar-nav mr-auto">
@@ -72,74 +71,46 @@
       </div>
     </nav>
 
-    <section id="landing" class="vertical-center">
-      <div>
-        <h1>Seth Mitchell</h1>
-        <h3>Software Engineering, Design, Systems</h3>
-      </div>
-      <a href="#project-feature"><div id="start" class="align-bottom">
-          <h4>Explore</h4>
-          <h4><i class="fas fa-arrow-circle-down"></i></h4>
-      </div></a>
+    <a href="work.html">
+        <div id="back-button">
+            <p><i class="fas fa-arrow-circle-left"></i> Back to All Projects</p>
+        </div>
+    </a>
+
+    <section class="project-header" id="sprout">
+        <h5>Sprout</h5>
     </section>
 
-    <section id="project-feature" class="vertical-center">
-      <div>
-        <img src="assets/Two_Mobile.png">
-      </div>
-      <div>
-        <h2>Driven by good design,<br> I build easy-to-use tools <br>that deliver an impact.</h2>
-        <a href="sprout.html">
-          <p>Explore the Sprout project <i class="fas fa-arrow-circle-right"></i></p>
-        </a>
-      </div>
-    </section>
-    
-    <section id="all-projects" class="vertical-center">
-      <div>
-        <h2>Skilled with modern <br>front-end frameworks <br>& continually learning <br>new technologies.</h2>
-        <a href="work.html">
-          <p>View all projects <i class="fas fa-arrow-circle-right"></i></p>
-        </a>
-      </div>
-      <div>
-        <img src="assets/technologies-graphic-02.png">
-      </div>
-    </section>
+    <section class="project-overview">
+        <div class="project-brief">
+            <h5>Project Brief</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam excepturi ipsum adipisci, maxime eius, tempora velit at delectus et sit ea fugit, rerum distinctio voluptate qui? Quam, quae est asperiores excepturi obcaecati quisquam dolore deleniti quibusdam blanditiis ducimus aut.
+            </p>
+        </div>
 
-    <section id="work-experience" class="vertical-center">
-      <div class="layer1">
-        <h2>Diverse role & industry experience. <br>Passion for social + environmental good.</h2>
-        <a href="resume.html">
-          <p>View current & past roles <i class="fas fa-arrow-circle-right"></i></p>
-        </a>
-      </div>
-      <div class="layer2">
-        <img src="assets/experience-graphic-03.png">
-      </div>
-    </section>
-   
-    <section id="learn-more" class="vertical-center">
-      <div>
-        <div id="i1">
-          <img src="assets/download-resume.png">
-          <a href="resume.html">
-          <p>View downloadable resume <i class="fas fa-arrow-circle-right"></i></p>
-          </a>
+        <div class="project-details">
+            <div class="myrole">
+                <h5>My Role</h5>
+                <p>
+                    Lead Designer, Front-End Engineer
+                </p>
+            </div>
+
+            <div class="timeline">
+                <h5>Project Timeline</h5>
+                <p>
+                    April 2020 - Present
+                </p>
+            </div>
+
+            <div class="utilizations">
+                <h5>Tech & Skills Used</h5>
+                <p>
+                    
+                </p>
+            </div>
         </div>
-        <div id="i2">
-          <a href="connect.html">
-          <p>Get in touch <i class="fas fa-arrow-circle-right"></i></p>
-          </a>
-          <img src="assets/get-in-touch.png">
-        </div>
-      </div>
-      <div>
-        <h2>Download my current <br>resume or view my <br>digital profiles & reach <br>out if you'd like to chat.</h2>
-      </div>
     </section>
 </body>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
