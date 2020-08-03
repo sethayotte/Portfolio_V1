@@ -9,7 +9,9 @@ $colors: (
     tertiarylink: #FF8500,
     primarytag: #000956,
     secondarytag: #FF8500,
-    tertiarytag: #006CD8
+    tertiarytag: #006CD8,
+    eportfolio: #0FBE00,
+    sgarage: #CC0000
 );
 
 @function color($color-name) {
@@ -342,10 +344,6 @@ body {
     justify-content: space-evenly;
     margin: 50px;
     margin-top: 100px;
-    
-    h5 {
-        color: color(sprout);
-    }
 }
 
 .project-brief {
@@ -415,10 +413,23 @@ body {
         justify-content: center;
         margin: 0px 10px 30px 10px;
         width: 30%;
-        height: 200px;
+        height: 300px;
         border-radius: 15px;
-        background-color: color(nav-bg);
+        background-color: #E1E1E180;
+        
     
+        img {
+            height: 275px;
+            filter: blur(3px);
+            margin-top: 9px;
+            position: absolute;
+            align-self: center;
+            z-index: -1;
+        }
+
+        #tesla {
+            height: 315px;
+        }
     }
 
     .project-block, .archive-block{
@@ -430,10 +441,17 @@ body {
     }
 
     a:hover {
-        background-color: color(nav-hover);
+        background-color: #E1E1E199;
         text-decoration: none;
     }
     
     
 }
 
+#eportfolio {
+    color: color(eportfolio);
+}
+
+#sgarage {
+    color: color(secondarylink);
+}

@@ -374,10 +374,6 @@ body p {
   margin-top: 100px;
 }
 
-.project-overview h5 {
-  color: #29BB86;
-}
-
 .project-brief {
   margin-right: 50px;
   max-width: 600px;
@@ -464,9 +460,25 @@ body p {
           justify-content: center;
   margin: 0px 10px 30px 10px;
   width: 30%;
-  height: 200px;
+  height: 300px;
   border-radius: 15px;
-  background-color: #F4F4F4;
+  background-color: #E1E1E180;
+}
+
+.current-projects a img, .archived-projects a img {
+  height: 275px;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  margin-top: 9px;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: -1;
+}
+
+.current-projects a #tesla, .archived-projects a #tesla {
+  height: 315px;
 }
 
 .current-projects .project-block h1, .current-projects .archive-block h1, .archived-projects .project-block h1, .archived-projects .archive-block h1 {
@@ -475,7 +487,15 @@ body p {
 }
 
 .current-projects a:hover, .archived-projects a:hover {
-  background-color: #E1E1E1;
+  background-color: #E1E1E199;
   text-decoration: none;
+}
+
+#eportfolio {
+  color: #0FBE00;
+}
+
+#sgarage {
+  color: #1E0A78;
 }
 /*# sourceMappingURL=main.css.map */
