@@ -321,12 +321,12 @@ body p {
 }
 
 #back-button {
-  width: 230px;
+  width: 250px;
   height: 40px;
   background-color: #F4F4F4;
   border-radius: 10px;
-  -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 5% 50%);
-          clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 5% 50%);
+  -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
+          clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,14 +336,14 @@ body p {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: 100px 15px 15px 15px;
+  margin: 100px 15px 15px 10px;
 }
 
 #back-button p {
   color: #2136FF;
   text-align: center;
   margin: auto;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 #back-button:hover {
@@ -379,15 +379,103 @@ body p {
 }
 
 .project-brief {
-  margin-right: 75px;
-  max-width: 400px;
+  margin-right: 50px;
+  max-width: 600px;
 }
 
 .project-brief h5 {
   font-size: 2.5rem;
 }
 
+.project-details {
+  min-width: 260px;
+}
+
 .project-details h5 {
   font-size: 1.5rem;
+}
+
+.product-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#technology {
+  display: inline-block;
+  padding: 2px 15px 2px 15px;
+  border-radius: 25px;
+  background-color: #000956;
+  color: white;
+  margin: auto;
+}
+
+#skills {
+  display: inline-block;
+  padding: 2px 15px 2px 15px;
+  border-radius: 25px;
+  background-color: #FF8500;
+  color: white;
+  margin: auto;
+}
+
+#programs {
+  display: inline-block;
+  padding: 2px 15px 2px 15px;
+  border-radius: 25px;
+  background-color: #006CD8;
+  color: white;
+  margin: auto;
+}
+
+.section-header {
+  margin: 50px;
+}
+
+.current-projects, .archived-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px;
+}
+
+.current-projects a, .archived-projects a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 10px 30px 10px;
+  width: 30%;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #F4F4F4;
+}
+
+.current-projects .project-block h1, .current-projects .archive-block h1, .archived-projects .project-block h1, .archived-projects .archive-block h1 {
+  text-align: center;
+  margin: auto;
+}
+
+.current-projects a:hover, .archived-projects a:hover {
+  background-color: #E1E1E1;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,10 @@ $colors: (
     black: black,
     sprout: #29BB86,
     secondarylink: #1E0A78,
-    tertiarylink: #FF8500
+    tertiarylink: #FF8500,
+    primarytag: #000956,
+    secondarytag: #FF8500,
+    tertiarytag: #006CD8
 );
 
 @function color($color-name) {
@@ -296,22 +299,22 @@ body {
 }
 
 #back-button {
-    width: 230px;
+    width: 250px;
     height: 40px;
     background-color: color(nav-bg);
     border-radius: 10px;
-    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 5% 50%);
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
 
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: 100px 15px 15px 15px;
+    margin: 100px 15px 15px 10px;
 
     p {
         color: color(accent);
         text-align: center;
         margin: auto;
-        padding-left: 30px;
+        padding-left: 50px;
     }
 
     
@@ -346,8 +349,8 @@ body {
 }
 
 .project-brief {
-    margin-right: 75px;
-    max-width: 400px;
+    margin-right: 50px;
+    max-width: 600px;
     
     h5 {
         font-size: 2.5rem;
@@ -355,8 +358,82 @@ body {
 }
 
 .project-details {
+    min-width: 260px;
 
     h5 {
         font-size: 1.5rem;
     }
 }
+
+.product-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#technology {
+    display: inline-block;
+    padding: 2px 15px 2px 15px;
+    border-radius:  25px;
+    background-color: color(primarytag);
+    color: white;
+    margin: auto;
+}
+
+#skills {
+    display: inline-block;
+    padding: 2px 15px 2px 15px;
+    border-radius:  25px;
+    background-color: color(secondarytag);
+    color: white;
+    margin: auto;
+}
+
+#programs {
+    display: inline-block;
+    padding: 2px 15px 2px 15px;
+    border-radius:  25px;
+    background-color: color(tertiarytag);
+    color: white;
+    margin: auto;
+}
+
+.section-header {
+    margin: 50px;
+}
+
+.current-projects, .archived-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 0px 10px 30px 10px;
+        width: 30%;
+        height: 200px;
+        border-radius: 15px;
+        background-color: color(nav-bg);
+    
+    }
+
+    .project-block, .archive-block{
+
+        h1 {
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    a:hover {
+        background-color: color(nav-hover);
+        text-decoration: none;
+    }
+    
+    
+}
+
