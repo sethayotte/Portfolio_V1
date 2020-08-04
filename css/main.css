@@ -336,6 +336,9 @@ body p {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 100px 15px 15px 10px;
 }
 
@@ -346,8 +349,13 @@ body p {
   padding-left: 50px;
 }
 
+#back-button a:hover {
+  text-decoration: none;
+}
+
 #back-button:hover {
   background-color: #E1E1E1;
+  text-decoration: none;
 }
 
 #back-button:hover a:hover {
@@ -431,7 +439,7 @@ body p {
 }
 
 .section-header {
-  margin: 50px;
+  margin: 75px;
 }
 
 .current-projects, .archived-projects {
@@ -463,6 +471,7 @@ body p {
   height: 300px;
   border-radius: 15px;
   background-color: #E1E1E180;
+  min-width: 400px;
 }
 
 .current-projects a img, .archived-projects a img {
@@ -478,7 +487,7 @@ body p {
 }
 
 .current-projects a #tesla, .archived-projects a #tesla {
-  height: 315px;
+  height: 290px;
 }
 
 .current-projects .project-block h1, .current-projects .archive-block h1, .archived-projects .project-block h1, .archived-projects .archive-block h1 {
@@ -497,5 +506,149 @@ body p {
 
 #sgarage {
   color: #1E0A78;
+}
+
+#connect-copy {
+  text-align: center;
+}
+
+#connect-copy p {
+  font-weight: 300;
+  font-style: normal;
+  margin: 0px 50px 75px 50px;
+}
+
+.connect-blocks .social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.connect-blocks .social-buttons a {
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 25px;
+}
+
+.connect-blocks .social-buttons a:hover {
+  background-color: #E1E1E1;
+}
+
+.connect-blocks .email-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.connect-blocks .email-button h2 {
+  font-size: 1.5rem;
+  background-color: #F4F4F4;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  color: #2136FF;
+}
+
+.connect-blocks .email-button h2:hover {
+  background-color: #E1E1E1;
+}
+
+.connect-blocks .email-button a:hover {
+  text-decoration: none;
+}
+
+.resume-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-body section {
+  width: 80%;
+  background-color: #F4F4F4;
+  border-radius: 25px;
+  padding: 35px;
+  margin-bottom: 25px;
+}
+
+.resume-body .section-title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.resume-body .content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume-body .content-block p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: .5rem;
+}
+
+.resume-body .content-block .iblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.resume-body .content-block .iblock .resume-detail .detail-title p {
+  font-weight: 700;
+}
+
+#resume-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 75px;
+}
+
+#resume-download p {
+  font-weight: 700;
+}
+
+#resume-download #download-link {
+  color: #2136FF;
+}
+
+#resume-download a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

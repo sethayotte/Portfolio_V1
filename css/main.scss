@@ -310,6 +310,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     margin: 100px 15px 15px 10px;
 
     p {
@@ -319,11 +320,17 @@ body {
         padding-left: 50px;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
     
 }
 
+
 #back-button:hover {
     background-color: color(nav-hover);
+    text-decoration: none;
     
     a:hover {
         text-decoration: none;
@@ -397,7 +404,7 @@ body {
 }
 
 .section-header {
-    margin: 50px;
+    margin: 75px;
 }
 
 .current-projects, .archived-projects {
@@ -416,6 +423,7 @@ body {
         height: 300px;
         border-radius: 15px;
         background-color: #E1E1E180;
+        min-width: 400px;
         
     
         img {
@@ -428,7 +436,7 @@ body {
         }
 
         #tesla {
-            height: 315px;
+            height: 290px;
         }
     }
 
@@ -455,3 +463,131 @@ body {
 #sgarage {
     color: color(secondarylink);
 }
+
+#connect-copy {
+    text-align: center;
+    
+    p {
+        font-weight: 300;
+        font-style: normal;
+        margin: 0px 50px 75px 50px;
+
+    }
+}
+
+.connect-blocks {
+
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    
+        a {
+            background-color: color(nav-bg);
+            padding: 20px;
+            border-radius: 10px;
+            align-self: center;
+            padding-bottom: 25px;
+        }
+
+        a:hover {
+            background-color: color(nav-hover);
+        }
+    }
+
+    .email-button {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-size: 1.5rem;
+            background-color: color(nav-bg);
+            padding: 15px 20px 15px 20px;
+            border-radius: 10px;
+            color: color(accent);
+
+        }
+
+        h2:hover {
+            background-color: color(nav-hover);
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        width: 80%;
+        background-color: color(nav-bg);
+        border-radius: 25px;
+        padding: 35px;
+        margin-bottom: 25px;
+    }
+    
+    .section-title {
+        h2 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    
+    .content-block {
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: .5rem;
+        }
+    
+        .iblock {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+    
+            .resume-detail {
+    
+                .detail-title {
+        
+                    p {
+                        font-weight: 700;
+                    }
+                    
+                }
+            }
+        }
+    
+    
+    }
+}
+
+#resume-download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+    
+    p {
+        font-weight: 700;
+    }
+
+    #download-link {
+        color: color(accent);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
