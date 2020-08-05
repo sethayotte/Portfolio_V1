@@ -304,7 +304,9 @@ body {
     width: 250px;
     height: 40px;
     background-color: color(nav-bg);
+    backdrop-filter: blur(20px);
     border-radius: 10px;
+    opacity: 0.85;
     clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
 
     display: flex;
@@ -349,13 +351,17 @@ body {
 .project-overview {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
+    margin: 50px 50px 0px 50px;
     margin-top: 100px;
 }
 
 .project-brief {
     margin-right: 50px;
     max-width: 600px;
+
+    a:hover {
+        text-decoration: none;
+    }
     
     h5 {
         font-size: 2.5rem;
@@ -458,6 +464,11 @@ body {
 
 #eportfolio {
     color: color(eportfolio);
+
+    h5 {
+        margin-top: 150px;
+        margin-bottom: -100px;
+    }
 }
 
 #sgarage {
@@ -591,3 +602,107 @@ body {
     }
 }
 
+.source-button {
+
+    background-color: color(nav-bg);
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 15px 0px 15px;
+    margin-top: 25px;
+    border-radius: 15px;
+
+    img {
+        height: 30px;
+        padding-right: 10px;
+    }
+
+    p {
+        color: color(accent);
+        padding-top: 4px;
+    }
+}
+
+.source-button:hover {
+    background-color: color(nav-hover);
+}
+
+.project-content {
+    margin: -30px 50px 50px 50px;
+}
+
+#everyday-portfolio {
+
+    #hero-image {
+
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 900px;
+            text-align: center;
+            margin-bottom: -40px;
+        }
+    }
+
+    h5 {
+        text-align: center;
+        color: #4a4a4a;
+        margin-top: -40px;
+    }
+
+    #document-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+
+        i {
+            margin-right: 10px;
+        }
+
+        #project-proposal, #design-brief {
+            margin-right: 50px;
+        }
+
+        #project-proposal, #design-brief, #see-project {
+            background-color: color(nav-bg);
+            border-radius: 15px;
+            height: 43px;
+
+            p {
+                margin: 0;
+                padding: 10px 20px 10px 20px; 
+                color: color(accent);
+            }
+
+            img {
+                height: 18px;
+                margin-top: -3px;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        #project-proposal:hover, #design-brief:hover, #see-project:hover {
+            background-color: color(nav-hover);
+        }
+    }
+
+    #ui-showcase {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 150px 25px 50px 25px;
+
+        img {
+            height: 700px;
+        }
+    }
+}

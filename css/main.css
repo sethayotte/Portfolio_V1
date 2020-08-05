@@ -324,7 +324,10 @@ body p {
   width: 250px;
   height: 40px;
   background-color: #F4F4F4;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   border-radius: 10px;
+  opacity: 0.85;
   -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
           clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 15% 50%);
   display: -webkit-box;
@@ -378,13 +381,17 @@ body p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 50px;
+  margin: 50px 50px 0px 50px;
   margin-top: 100px;
 }
 
 .project-brief {
   margin-right: 50px;
   max-width: 600px;
+}
+
+.project-brief a:hover {
+  text-decoration: none;
 }
 
 .project-brief h5 {
@@ -502,6 +509,11 @@ body p {
 
 #eportfolio {
   color: #0FBE00;
+}
+
+#eportfolio h5 {
+  margin-top: 150px;
+  margin-bottom: -100px;
 }
 
 #sgarage {
@@ -650,5 +662,132 @@ body p {
 
 #resume-download a:hover {
   text-decoration: none;
+}
+
+.source-button {
+  background-color: #F4F4F4;
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px 0px 15px;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.source-button img {
+  height: 30px;
+  padding-right: 10px;
+}
+
+.source-button p {
+  color: #2136FF;
+  padding-top: 4px;
+}
+
+.source-button:hover {
+  background-color: #E1E1E1;
+}
+
+.project-content {
+  margin: -30px 50px 50px 50px;
+}
+
+#everyday-portfolio #hero-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#everyday-portfolio #hero-image img {
+  height: 900px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+#everyday-portfolio h5 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: -40px;
+}
+
+#everyday-portfolio #document-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+#everyday-portfolio #document-container i {
+  margin-right: 10px;
+}
+
+#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief {
+  margin-right: 50px;
+}
+
+#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #everyday-portfolio #document-container #see-project {
+  background-color: #F4F4F4;
+  border-radius: 15px;
+  height: 43px;
+}
+
+#everyday-portfolio #document-container #project-proposal p, #everyday-portfolio #document-container #design-brief p, #everyday-portfolio #document-container #see-project p {
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  color: #2136FF;
+}
+
+#everyday-portfolio #document-container #project-proposal img, #everyday-portfolio #document-container #design-brief img, #everyday-portfolio #document-container #see-project img {
+  height: 18px;
+  margin-top: -3px;
+}
+
+#everyday-portfolio #document-container #project-proposal a:hover, #everyday-portfolio #document-container #design-brief a:hover, #everyday-portfolio #document-container #see-project a:hover {
+  text-decoration: none;
+}
+
+#everyday-portfolio #document-container #project-proposal:hover, #everyday-portfolio #document-container #design-brief:hover, #everyday-portfolio #document-container #see-project:hover {
+  background-color: #E1E1E1;
+}
+
+#everyday-portfolio #ui-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 150px 25px 50px 25px;
+}
+
+#everyday-portfolio #ui-showcase img {
+  height: 700px;
 }
 /*# sourceMappingURL=main.css.map */
