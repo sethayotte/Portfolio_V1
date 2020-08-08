@@ -48,9 +48,21 @@ button:focus {
 }
 
 .navbar-collapse {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 10px;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #e9e8e890;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #logo {
+    margin-top: -3px;
+  }
 }
 
 .navbar-social {
@@ -734,7 +746,7 @@ body p {
   margin: -30px 50px 50px 50px;
 }
 
-#everyday-portfolio #hero-image {
+#everyday-portfolio #hero-image, #mesh-content #hero-image, #sprout-content #hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -743,19 +755,19 @@ body p {
           justify-content: center;
 }
 
-#everyday-portfolio #hero-image img {
+#everyday-portfolio #hero-image img, #mesh-content #hero-image img, #sprout-content #hero-image img {
   height: 900px;
   text-align: center;
   margin-bottom: -40px;
 }
 
-#everyday-portfolio h5 {
+#everyday-portfolio h5, #mesh-content h5, #sprout-content h5 {
   text-align: center;
   color: #4a4a4a;
   margin-top: -40px;
 }
 
-#everyday-portfolio #document-container {
+#everyday-portfolio #document-container, #mesh-content #document-container, #sprout-content #document-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,40 +781,40 @@ body p {
   margin-top: 50px;
 }
 
-#everyday-portfolio #document-container i {
+#everyday-portfolio #document-container i, #mesh-content #document-container i, #sprout-content #document-container i {
   margin-right: 10px;
 }
 
-#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief {
+#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #mesh-content #document-container #project-proposal, #mesh-content #document-container #design-brief, #sprout-content #document-container #project-proposal, #sprout-content #document-container #design-brief {
   margin-right: 50px;
 }
 
-#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #everyday-portfolio #document-container #see-project {
+#everyday-portfolio #document-container #project-proposal, #everyday-portfolio #document-container #design-brief, #everyday-portfolio #document-container #see-project, #mesh-content #document-container #project-proposal, #mesh-content #document-container #design-brief, #mesh-content #document-container #see-project, #sprout-content #document-container #project-proposal, #sprout-content #document-container #design-brief, #sprout-content #document-container #see-project {
   background-color: #e9e8e890;
   border-radius: 15px;
   height: 43px;
 }
 
-#everyday-portfolio #document-container #project-proposal p, #everyday-portfolio #document-container #design-brief p, #everyday-portfolio #document-container #see-project p {
+#everyday-portfolio #document-container #project-proposal p, #everyday-portfolio #document-container #design-brief p, #everyday-portfolio #document-container #see-project p, #mesh-content #document-container #project-proposal p, #mesh-content #document-container #design-brief p, #mesh-content #document-container #see-project p, #sprout-content #document-container #project-proposal p, #sprout-content #document-container #design-brief p, #sprout-content #document-container #see-project p {
   margin: 0;
   padding: 10px 20px 10px 20px;
   color: #2136FF;
 }
 
-#everyday-portfolio #document-container #project-proposal img, #everyday-portfolio #document-container #design-brief img, #everyday-portfolio #document-container #see-project img {
+#everyday-portfolio #document-container #project-proposal img, #everyday-portfolio #document-container #design-brief img, #everyday-portfolio #document-container #see-project img, #mesh-content #document-container #project-proposal img, #mesh-content #document-container #design-brief img, #mesh-content #document-container #see-project img, #sprout-content #document-container #project-proposal img, #sprout-content #document-container #design-brief img, #sprout-content #document-container #see-project img {
   height: 18px;
   margin-top: -3px;
 }
 
-#everyday-portfolio #document-container #project-proposal a:hover, #everyday-portfolio #document-container #design-brief a:hover, #everyday-portfolio #document-container #see-project a:hover {
+#everyday-portfolio #document-container #project-proposal a:hover, #everyday-portfolio #document-container #design-brief a:hover, #everyday-portfolio #document-container #see-project a:hover, #mesh-content #document-container #project-proposal a:hover, #mesh-content #document-container #design-brief a:hover, #mesh-content #document-container #see-project a:hover, #sprout-content #document-container #project-proposal a:hover, #sprout-content #document-container #design-brief a:hover, #sprout-content #document-container #see-project a:hover {
   text-decoration: none;
 }
 
-#everyday-portfolio #document-container #project-proposal:hover, #everyday-portfolio #document-container #design-brief:hover, #everyday-portfolio #document-container #see-project:hover {
+#everyday-portfolio #document-container #project-proposal:hover, #everyday-portfolio #document-container #design-brief:hover, #everyday-portfolio #document-container #see-project:hover, #mesh-content #document-container #project-proposal:hover, #mesh-content #document-container #design-brief:hover, #mesh-content #document-container #see-project:hover, #sprout-content #document-container #project-proposal:hover, #sprout-content #document-container #design-brief:hover, #sprout-content #document-container #see-project:hover {
   background-color: #E1E1E1;
 }
 
-#everyday-portfolio #ui-showcase {
+#everyday-portfolio #ui-showcase, #mesh-content #ui-showcase, #sprout-content #ui-showcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,7 +830,7 @@ body p {
   margin: 150px 25px 50px 25px;
 }
 
-#everyday-portfolio #ui-showcase img {
+#everyday-portfolio #ui-showcase img, #mesh-content #ui-showcase img, #sprout-content #ui-showcase img {
   height: 700px;
 }
 
@@ -833,8 +845,97 @@ body p {
 
 #seths-garage #hero-image img {
   width: 100%;
+  max-width: 1500px;
   text-align: center;
   margin-top: 75px;
   margin-bottom: -40px;
+}
+
+#mesh {
+  color: #F6CD0B;
+  height: 200px;
+}
+
+#mesh #mesh-title {
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+#subhead {
+  color: #F6CD0B;
+}
+
+#mesh-content {
+  margin-bottom: -200px;
+}
+
+#mesh-content #hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mesh-content #hero-content img {
+  width: 25%;
+  margin-bottom: 150px;
+}
+
+#mesh-overview {
+  padding-top: 175px;
+  height: 550px;
+}
+
+#sprout-content #hero-image-sprout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sprout-content #hero-image-sprout img {
+  height: 800px;
+}
+
+#sprout-content #hero-image-sprout h5 {
+  padding-top: 20px;
+}
+
+#sprout-content #secondary-sprout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+#sprout-content #secondary-sprout img {
+  width: 90%;
+}
+
+#mesh-body #mesh-video {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mesh-body iframe {
+  width: 65%;
+  height: 580px;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=main.css.map */
