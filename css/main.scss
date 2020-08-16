@@ -604,6 +604,42 @@ body {
     
     }
 
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #resume-profile {
+        img {
+            width: 200px;
+            border-radius: 10px;
+            margin-right: 25px;
+        }
+    }
+
+    .content-block {
+        h1 {
+            color: color(accent);
+        }
+    }
+
+    #contact-resume {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 25px;
+
+        .social-buttons {
+            margin-top: 35px;
+            margin-left: -25px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
 
 .proficiencies {
     
