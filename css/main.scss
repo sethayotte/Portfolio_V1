@@ -2,6 +2,7 @@ $colors: (
     accent: #2136FF,
     headings: #313131,
     nav-bg: #e9e8e890,
+    nav-bg2: #f4f4f4,
     nav-hover: #E1E1E1,
     black: black,
     sprout: #29BB86,
@@ -86,15 +87,14 @@ html {
 
 @media only screen and (max-width: 768px) {
     .navbar-collapse {
-      background-color: color(nav-bg);
+      background-color: color(nav-bg2);
+      opacity: 1;
       margin-top: 10px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
 
-    #logo {
-        margin-top: -3px;
-    }
+    
   }
 
 .navbar-social {
@@ -109,16 +109,6 @@ html {
         border-radius: 5px;
     }
 
-}
-
-header {
-    nav {
-        a {
-            img {
-               z-index: 3;
-            }
-        }
-    }
 }
 
 body {
@@ -434,6 +424,7 @@ body {
 
 .section-header {
     margin: 75px;
+    margin-top: 125px;
 }
 
 .current-projects, .archived-projects {
