@@ -204,6 +204,26 @@ body p {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  #project-feature div:first-child {
+    z-index: 2;
+  }
+  #project-feature .mobile-wrapper {
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    background-color: #e9e8e890;
+    width: 95%;
+    height: 70%;
+  }
+}
+
 #all-projects {
   display: -webkit-box;
   display: -ms-flexbox;
