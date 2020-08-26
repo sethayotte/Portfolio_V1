@@ -173,7 +173,7 @@ body p {
   font-size: larger;
 }
 
-#project-feature {
+#project-feature .mobile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,27 +204,7 @@ body p {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
-  #project-feature div:first-child {
-    z-index: 2;
-  }
-  #project-feature .mobile-wrapper {
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    background-color: #e9e8e890;
-    width: 95%;
-    height: 70%;
-  }
-}
-
-#all-projects {
+#all-projects .mobile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +261,7 @@ body p {
   z-index: 1;
 }
 
-#learn-more {
+#learn-more .mobile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +325,67 @@ body p {
 
 #learn-more #i2 img {
   margin-left: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  #project-feature .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #project-feature .mobile-wrapper div:first-child {
+    position: absolute;
+    z-index: 1;
+  }
+  #project-feature .mobile-wrapper div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    background-color: #e9e8e890;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border-radius: 25px;
+    height: 80vh;
+    width: 90vw;
+  }
+  #all-projects .mobile-wrapper {
+    margin-right: 0px;
+  }
+  #all-projects .mobile-wrapper div:nth-child(2) {
+    position: absolute;
+    z-index: 1;
+  }
+  #all-projects .mobile-wrapper div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 3;
+    background-color: #e9e8e890;
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+    border-radius: 25px;
+    height: 80vh;
+    width: 90vw;
+  }
 }
 
 #back-button {
