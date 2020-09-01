@@ -224,6 +224,10 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        .mobile-hero {
+            display: none;
+        }
     }
 
     img {
@@ -331,6 +335,7 @@ body {
             div:first-child {
                 position: absolute;
                 z-index: 1;
+                padding-right: 45px;
             }
     
             div:nth-child(2) {
@@ -352,12 +357,21 @@ body {
     #all-projects {
         
         .mobile-wrapper {
-            margin-right: 0px;            
-        
+            margin-right: 0px;
 
-            div:nth-child(2) {
+            div:nth-child(3) {
+                display: block;
                 position: absolute;
                 z-index: 1;
+                
+                img {
+                    height: 500px;
+                    margin-right: 70px;
+                }
+            }
+
+            div:nth-child(2) {
+                display: none;
             }
     
             div:first-child {

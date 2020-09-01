@@ -220,6 +220,10 @@ body p {
           align-items: center;
 }
 
+#all-projects .mobile-wrapper .mobile-hero {
+  display: none;
+}
+
 #all-projects img {
   height: 300px;
   margin-left: 75px;
@@ -334,6 +338,7 @@ body p {
   #project-feature .mobile-wrapper div:first-child {
     position: absolute;
     z-index: 1;
+    padding-right: 45px;
   }
   #project-feature .mobile-wrapper div:nth-child(2) {
     display: -webkit-box;
@@ -360,9 +365,17 @@ body p {
   #all-projects .mobile-wrapper {
     margin-right: 0px;
   }
-  #all-projects .mobile-wrapper div:nth-child(2) {
+  #all-projects .mobile-wrapper div:nth-child(3) {
+    display: block;
     position: absolute;
     z-index: 1;
+  }
+  #all-projects .mobile-wrapper div:nth-child(3) img {
+    height: 500px;
+    margin-right: 70px;
+  }
+  #all-projects .mobile-wrapper div:nth-child(2) {
+    display: none;
   }
   #all-projects .mobile-wrapper div:first-child {
     display: -webkit-box;
