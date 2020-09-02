@@ -237,32 +237,47 @@ body p {
   text-decoration: none;
 }
 
-#work-experience h2 {
+#work-experience .mobile-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#work-experience .mobile-wrapper h2 {
   text-align: center;
 }
 
-#work-experience p {
+#work-experience .mobile-wrapper p {
   color: #FF8500;
   text-align: center;
 }
 
-#work-experience img {
-  height: 490px;
-}
-
-#work-experience a:hover {
+#work-experience .mobile-wrapper a:hover {
   text-decoration: none;
 }
 
-#work-experience .layer1 {
-  margin-top: 15px;
-  position: absolute;
+#work-experience .mobile-wrapper .layer1 {
+  margin-top: 45px;
   z-index: 2;
 }
 
-#work-experience .layer2 {
+#work-experience .mobile-wrapper .layer2 {
   position: absolute;
   z-index: 1;
+}
+
+#work-experience .mobile-wrapper .layer2 img {
+  height: 490px;
+}
+
+#work-experience .mobile-wrapper #layer-mobile img {
+  display: none;
 }
 
 #learn-more .mobile-wrapper {
@@ -362,22 +377,22 @@ body p {
     height: 80vh;
     width: 90vw;
   }
-  #all-projects .mobile-wrapper {
+  #all-projects .mobile-wrapper, #work-experience .mobile-wrapper {
     margin-right: 0px;
   }
-  #all-projects .mobile-wrapper div:nth-child(3) {
+  #all-projects .mobile-wrapper div:nth-child(3), #work-experience .mobile-wrapper div:nth-child(3) {
     display: block;
     position: absolute;
     z-index: 1;
   }
-  #all-projects .mobile-wrapper div:nth-child(3) img {
+  #all-projects .mobile-wrapper div:nth-child(3) img, #work-experience .mobile-wrapper div:nth-child(3) img {
     height: 500px;
     margin-right: 70px;
   }
-  #all-projects .mobile-wrapper div:nth-child(2) {
+  #all-projects .mobile-wrapper div:nth-child(2), #work-experience .mobile-wrapper div:nth-child(2) {
     display: none;
   }
-  #all-projects .mobile-wrapper div:first-child {
+  #all-projects .mobile-wrapper div:first-child, #work-experience .mobile-wrapper div:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -398,6 +413,20 @@ body p {
     border-radius: 25px;
     height: 80vh;
     width: 90vw;
+    margin-top: -20px;
+  }
+  #all-projects .mobile-wrapper .layer1 h2, #work-experience .mobile-wrapper .layer1 h2 {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #all-projects .mobile-wrapper .layer2 img, #work-experience .mobile-wrapper .layer2 img {
+    display: none;
+  }
+  #all-projects .mobile-wrapper #layer-mobile img, #work-experience .mobile-wrapper #layer-mobile img {
+    display: block;
+    height: 500px;
+    margin-left: 75px;
+    margin-top: 50px;
   }
 }
 
