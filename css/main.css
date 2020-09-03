@@ -296,6 +296,14 @@ body p {
           align-items: center;
 }
 
+#learn-more .mobile-wrapper #mobile-lm-links {
+  display: none;
+}
+
+#learn-more .mobile-wrapper #lm-mobile-hero {
+  display: none;
+}
+
 #learn-more h2 {
   margin-left: 100px;
 }
@@ -377,22 +385,22 @@ body p {
     height: 80vh;
     width: 90vw;
   }
-  #all-projects .mobile-wrapper, #work-experience .mobile-wrapper {
+  #all-projects .mobile-wrapper, #work-experience .mobile-wrapper, #learn-more .mobile-wrapper {
     margin-right: 0px;
   }
-  #all-projects .mobile-wrapper div:nth-child(3), #work-experience .mobile-wrapper div:nth-child(3) {
+  #all-projects .mobile-wrapper div:nth-child(3), #work-experience .mobile-wrapper div:nth-child(3), #learn-more .mobile-wrapper div:nth-child(3) {
     display: block;
     position: absolute;
     z-index: 1;
   }
-  #all-projects .mobile-wrapper div:nth-child(3) img, #work-experience .mobile-wrapper div:nth-child(3) img {
+  #all-projects .mobile-wrapper div:nth-child(3) img, #work-experience .mobile-wrapper div:nth-child(3) img, #learn-more .mobile-wrapper div:nth-child(3) img {
     height: 500px;
     margin-right: 70px;
   }
-  #all-projects .mobile-wrapper div:nth-child(2), #work-experience .mobile-wrapper div:nth-child(2) {
+  #all-projects .mobile-wrapper div:nth-child(2), #work-experience .mobile-wrapper div:nth-child(2), #learn-more .mobile-wrapper div:nth-child(2) {
     display: none;
   }
-  #all-projects .mobile-wrapper div:first-child, #work-experience .mobile-wrapper div:first-child {
+  #all-projects .mobile-wrapper div:first-child, #work-experience .mobile-wrapper div:first-child, #learn-more .mobile-wrapper div:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,18 +423,47 @@ body p {
     width: 90vw;
     margin-top: -20px;
   }
-  #all-projects .mobile-wrapper .layer1 h2, #work-experience .mobile-wrapper .layer1 h2 {
+  #all-projects .mobile-wrapper .layer1 h2, #work-experience .mobile-wrapper .layer1 h2, #learn-more .mobile-wrapper .layer1 h2 {
     margin-left: 25px;
     margin-right: 25px;
   }
-  #all-projects .mobile-wrapper .layer2 img, #work-experience .mobile-wrapper .layer2 img {
+  #all-projects .mobile-wrapper .layer1 p, #work-experience .mobile-wrapper .layer1 p, #learn-more .mobile-wrapper .layer1 p {
+    text-shadow: 0px 2px 10px #FFF;
+  }
+  #all-projects .mobile-wrapper .layer2 img, #work-experience .mobile-wrapper .layer2 img, #learn-more .mobile-wrapper .layer2 img {
     display: none;
   }
-  #all-projects .mobile-wrapper #layer-mobile img, #work-experience .mobile-wrapper #layer-mobile img {
+  #all-projects .mobile-wrapper #layer-mobile img, #work-experience .mobile-wrapper #layer-mobile img, #learn-more .mobile-wrapper #layer-mobile img {
     display: block;
     height: 500px;
     margin-left: 75px;
-    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #all-projects .mobile-wrapper #i1, #all-projects .mobile-wrapper #i2, #work-experience .mobile-wrapper #i1, #work-experience .mobile-wrapper #i2, #learn-more .mobile-wrapper #i1, #learn-more .mobile-wrapper #i2 {
+    display: none;
+  }
+  #all-projects .mobile-wrapper #lm-text, #work-experience .mobile-wrapper #lm-text, #learn-more .mobile-wrapper #lm-text {
+    display: block;
+    position: absolute;
+    z-index: 3;
+  }
+  #all-projects .mobile-wrapper #lm-text h2, #work-experience .mobile-wrapper #lm-text h2, #learn-more .mobile-wrapper #lm-text h2 {
+    margin-left: 0px;
+  }
+  #all-projects .mobile-wrapper #mobile-lm-links, #work-experience .mobile-wrapper #mobile-lm-links, #learn-more .mobile-wrapper #mobile-lm-links {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    margin-top: 125px;
+  }
+  #all-projects .mobile-wrapper #lm-mobile-hero, #work-experience .mobile-wrapper #lm-mobile-hero, #learn-more .mobile-wrapper #lm-mobile-hero {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+  #all-projects .mobile-wrapper #lm-mobile-hero img, #work-experience .mobile-wrapper #lm-mobile-hero img, #learn-more .mobile-wrapper #lm-mobile-hero img {
+    height: 550px;
   }
 }
 

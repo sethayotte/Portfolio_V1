@@ -291,6 +291,14 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        #mobile-lm-links {
+            display: none;
+        }
+
+        #lm-mobile-hero {
+            display: none;
+        }
     }
 
     h2 {
@@ -365,7 +373,7 @@ body {
     }
 
     // update images with mobile-versions: all-projects, work-experience, learn-more
-    #all-projects, #work-experience {
+    #all-projects, #work-experience, #learn-more {
         
         .mobile-wrapper {
             margin-right: 0px;
@@ -404,6 +412,10 @@ body {
                     margin-left: 25px;
                     margin-right: 25px;
                 }
+
+                p {
+                    text-shadow: 0px 2px 10px #FFF;
+                }
             }
 
             .layer2 {
@@ -418,7 +430,39 @@ body {
                     display: block;
                     height: 500px;
                     margin-left: 75px;
-                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            #i1, #i2 {
+                display: none;
+            }
+
+            #lm-text {
+                display: block;
+                position: absolute;
+                z-index: 3;
+
+                h2 {
+                    margin-left: 0px;
+                }
+            }
+
+            #mobile-lm-links {
+                display: inline-block;
+                position: absolute;
+                z-index: 3;
+                text-align: center;
+                margin-top: 125px;
+            }
+
+            #lm-mobile-hero {
+                display: block;
+                position: absolute;
+                z-index: 1;
+
+                img {
+                    height: 550px;
                 }
             }
         }
