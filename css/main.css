@@ -689,12 +689,13 @@ body p {
 
 .connect-blocks .social-buttons a {
   background-color: #e9e8e890;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  margin: 20px;
 }
 
 .connect-blocks .social-buttons a:hover {
@@ -890,6 +891,43 @@ body p {
 
 #resume-download a:hover {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .resume-body .about-me #resume-profile {
+    display: none;
+  }
+  .resume-body .about-me .section-title {
+    display: none;
+  }
+  .resume-body .about-me .social-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 15px;
+  }
+  .resume-body .about-me .social-buttons div {
+    margin-bottom: 25px;
+  }
+  .resume-body .about-me .social-buttons a {
+    background-color: #e9e8e890;
+    padding: 10px;
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: 15px;
+  }
+  .resume-body .about-me .social-buttons a:hover {
+    background-color: #E1E1E1;
+  }
 }
 
 .source-button {

@@ -664,10 +664,11 @@ body {
     
         a {
             background-color: color(nav-bg);
-            padding: 20px;
+            padding: 10px;
             border-radius: 10px;
             align-self: center;
-            padding-bottom: 25px;
+            padding-bottom: 15px;
+            margin: 20px;
         }
 
         a:hover {
@@ -842,6 +843,42 @@ body {
 
     a:hover {
         text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .resume-body {
+        .about-me {
+            #resume-profile {
+                display: none;
+            }
+
+            .section-title {
+                display: none;
+            }
+            .social-buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 15px;
+
+                div {
+                    margin-bottom: 25px;
+                }
+                
+                a {
+                    background-color: color(nav-bg);
+                    padding: 10px;
+                    border-radius: 10px;
+                    align-self: center;
+                    padding-bottom: 15px;
+                }
+
+                a:hover {
+                    background-color: color(nav-hover);
+                }
+            }
+        }
     }
 }
 
