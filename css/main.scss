@@ -776,12 +776,12 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 50px;
+        margin-right: 25px;
         margin-left: 25px;
 
         .social-buttons {
             margin-top: 35px;
-            margin-left: -25px;
+            margin-left: 10px;
             margin-bottom: 0px;
         }
     }
@@ -853,6 +853,11 @@ body {
                 display: none;
             }
 
+            #contact-resume {
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+
             .section-title {
                 display: none;
             }
@@ -869,8 +874,8 @@ body {
                 a {
                     background-color: color(nav-bg);
                     padding: 10px;
-                    border-radius: 10px;
-                    align-self: center;
+                    border-radius: 60px;
+                    margin-right: 15px;
                     padding-bottom: 15px;
                 }
 
