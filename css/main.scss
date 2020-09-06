@@ -847,7 +847,32 @@ body {
 }
 
 @media only screen and (max-width: 850px) {
+    
     .resume-body {
+        .iblock {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: left;
+
+            .resume-detail {
+
+                div:nth-child(2) {
+                    p:first-child {
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .resume-date {
+                p {
+                    font-style: italic;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: left;
+                }
+            }
+
+        }
         .about-me {
             #resume-profile {
                 display: none;
