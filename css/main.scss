@@ -1146,14 +1146,14 @@ body {
         }
 
         #yt-button {
-            background-color: color(youtube);
+            background-color: color(nav-bg);
             border-radius: 15px;
             height: 43px;
 
             p {
                 margin: 0;
                 padding: 10px 20px 10px 20px; 
-                color: white;
+                color: color(youtube);
             }
 
             a:hover {
@@ -1162,10 +1162,10 @@ body {
         }
 
         #yt-button:hover {
-            background-color: color(nav-bg);
+            background-color: color(youtube);
 
             p:hover {
-                color: color(youtube);
+                color: white;
             }
         }
     }

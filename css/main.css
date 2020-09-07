@@ -1222,7 +1222,7 @@ body p {
 }
 
 #youtube-buttons #yt-button {
-  background-color: #FF0200;
+  background-color: #e9e8e890;
   border-radius: 15px;
   height: 43px;
 }
@@ -1230,7 +1230,7 @@ body p {
 #youtube-buttons #yt-button p {
   margin: 0;
   padding: 10px 20px 10px 20px;
-  color: white;
+  color: #FF0200;
 }
 
 #youtube-buttons #yt-button a:hover {
@@ -1238,10 +1238,10 @@ body p {
 }
 
 #youtube-buttons #yt-button:hover {
-  background-color: #e9e8e890;
+  background-color: #FF0200;
 }
 
 #youtube-buttons #yt-button:hover p:hover {
-  color: #FF0200;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
