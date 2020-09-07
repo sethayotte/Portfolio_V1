@@ -1182,4 +1182,66 @@ body p {
   height: 580px;
   border-radius: 25px;
 }
+
+#youtube-header img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 150px;
+}
+
+#youtube-banner img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#youtube-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+
+#youtube-buttons i {
+  margin-right: 10px;
+}
+
+#youtube-buttons #yt-button {
+  margin-right: 50px;
+}
+
+#youtube-buttons #yt-button {
+  background-color: #FF0200;
+  border-radius: 15px;
+  height: 43px;
+}
+
+#youtube-buttons #yt-button p {
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  color: white;
+}
+
+#youtube-buttons #yt-button a:hover {
+  text-decoration: none;
+}
+
+#youtube-buttons #yt-button:hover {
+  background-color: #e9e8e890;
+}
+
+#youtube-buttons #yt-button:hover p:hover {
+  color: #FF0200;
+}
 /*# sourceMappingURL=main.css.map */

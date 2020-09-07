@@ -13,7 +13,8 @@ $colors: (
     tertiarytag: #006CD8,
     eportfolio: #0FBE00,
     sgarage: #CC0000,
-    mesh: #F6CD0B
+    mesh: #F6CD0B,
+    youtube: #FF0200
 );
 
 @function color($color-name) {
@@ -1109,3 +1110,62 @@ body {
         border-radius: 25px;
     }
 }
+
+#youtube-header {
+    img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 150px;
+    }
+}
+
+#youtube-banner {
+    img {
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+#youtube-buttons {
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+
+        i {
+            margin-right: 10px;
+        }
+
+        #yt-button{
+            margin-right: 50px;
+        }
+
+        #yt-button {
+            background-color: color(youtube);
+            border-radius: 15px;
+            height: 43px;
+
+            p {
+                margin: 0;
+                padding: 10px 20px 10px 20px; 
+                color: white;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        #yt-button:hover {
+            background-color: color(nav-bg);
+
+            p:hover {
+                color: color(youtube);
+            }
+        }
+    }
