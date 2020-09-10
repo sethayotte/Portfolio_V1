@@ -990,6 +990,10 @@ body p {
   margin: -30px 50px 50px 50px;
 }
 
+.project-overview {
+  margin-bottom: 100px;
+}
+
 #everyday-portfolio #hero-image, #mesh-content #hero-image, #sprout-content #hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
