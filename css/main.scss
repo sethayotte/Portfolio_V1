@@ -658,6 +658,16 @@ body {
 
 .connect-blocks {
 
+    #connect-social-buttons {
+        a {
+            background-color: color(nav-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 15px;
+            padding-bottom: 25px;
+        }
+    }
+
     .social-buttons {
         display: flex;
         justify-content: center;
@@ -886,6 +896,16 @@ body {
 
             .section-title {
                 display: none;
+            }
+
+            #connect-social-buttons {
+                a {
+                    background-color: color(nav-bg);
+                    padding: 20px;
+                    border-radius: 60px;
+                    margin-right: 15px;
+                    padding-bottom: 25px;
+                }
             }
             .social-buttons {
                 display: flex;

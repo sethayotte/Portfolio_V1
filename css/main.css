@@ -677,6 +677,14 @@ body p {
   margin: 0px 50px 75px 50px;
 }
 
+.connect-blocks #connect-social-buttons a {
+  background-color: #e9e8e890;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 15px;
+  padding-bottom: 25px;
+}
+
 .connect-blocks .social-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,6 +930,13 @@ body p {
   }
   .resume-body .about-me .section-title {
     display: none;
+  }
+  .resume-body .about-me #connect-social-buttons a {
+    background-color: #e9e8e890;
+    padding: 20px;
+    border-radius: 60px;
+    margin-right: 15px;
+    padding-bottom: 25px;
   }
   .resume-body .about-me .social-buttons {
     display: -webkit-box;
