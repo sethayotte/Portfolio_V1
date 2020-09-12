@@ -1097,6 +1097,10 @@ body p {
   height: 700px;
 }
 
+.head-space {
+  margin-top: 75px;
+}
+
 #seths-garage #hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
